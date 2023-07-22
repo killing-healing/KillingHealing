@@ -1,0 +1,29 @@
+import { StyleSheet } from 'react-native';
+import { Text, View } from '../../components/Themed';
+import { Button } from "@react-native-material/core";
+
+export default function Main() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Post Detail</Text>
+      <Button title="Click Me" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '80%',
+  },
+});
